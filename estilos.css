@@ -1,0 +1,529 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    color: #1e1e1e;
+    transition: background-color 0.4s, color 0.4s;
+    
+}
+body.dark-mode {
+  background-color: #1e1e1e; /* fondo oscuro */
+  color: #f0f0f0;            /* letras claras */
+}
+body.dark-mode .uno,
+body.dark-mode .dos,
+body.dark-mode .caja-presentacion,
+body.dark-mode .caja-experiencia,
+body.dark-mode .caja-cara
+
+{
+
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+header{
+    background-image: url(banner.png);
+    height: 150px;
+    background-color: #f0f0f0;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 10px 20px
+}
+/* Estilo del botón de lunita */
+#darkModeToggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Asegurate de invertir también cosas como tarjetas o cajas */
+.card {
+  background-color: #f0f0f0;
+  color: #1e1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+.cara{
+    
+    height: 200px;
+    
+    
+}
+.uno{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    background-color: #f0f0f0;
+    color: white;
+    padding: 0px 10px;
+    /* padding-top: 10%; */
+}
+.caja-central{
+    margin-top: 0%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: auto;
+    
+}
+.caja-cara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #f0f0f0;
+   }
+
+  
+.caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #f0f0f0;
+    color: black;
+    padding: 50px;
+}
+
+.dos{
+    background-color: #f0f0f0;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    
+}
+.aptitudes{
+    width: 80%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background-color: #f0f0f0;
+    color:#050505;
+    padding:10px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #050505;
+    display: inline-block;   
+
+}
+
+body.dark-mode .aptitudes{
+ background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 0 20px #aaa;
+
+}
+
+.tech-list{
+    display: flex;
+    justify-content: center;
+    gap:20px;    
+}
+
+
+.tech{
+  height: 60px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  border-radius: 8px;
+
+}
+.tech:hover {
+  transform: scale(1.1);
+  border-color: black;
+  box-shadow: 0 0 15px #050505;
+}
+
+
+
+.certificados {
+    justify-content: center;  /* centra las imágenes en el contenedor */
+    gap: 200px;                 /* separación uniforme entre certificados */
+    flex-wrap: wrap;          /* permite bajar a otra línea si falta espacio */
+    padding: 20px 0;           /* algo de espacio arriba y abajo */
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    padding-top: 30px;
+}
+
+.certificados h2 {
+  margin-bottom: 30px; /* Reduce el espacio entre el título y las imágenes */
+  margin-top: 0;        /* Elimina margen superior si lo hay */
+  padding-top: 0;
+  text-align: center;   /* Centra el título */
+}
+.certificados .tech {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  object-fit: cover;
+}
+
+.certificados .tech-list {
+  padding-top: 0px;       /* Elimina espacio extra arriba de las imágenes */
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.certificados img {
+    max-width: 250px;          /* ajusta tamaño según lo necesites */
+    height:auto;
+    border-radius: 8px;        /* opcional: bordes redondeados */
+}
+.tres{
+    background-color: #303030;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    color: #F2F2F2;
+}
+.proyectos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card a,  a {
+    color: white;
+}
+
+.red-social{
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+   
+}
+.red-social:hover {
+  transform: scale(1.1);
+  border-color: black;
+  box-shadow: 0 0 15px #fdffff;
+}
+.boton:hover {
+  background-color: #005ecb;
+  border-color: #005ecb;
+}
+
+footer{
+    background-image: url(retirada.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+}
+.contacto{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;   
+    
+}
+
+.boton {
+  background-color: #005ecb;
+  display:inline-block ;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.boton:hover{
+    transform: scale (1.05);
+    box-shadow: 0 0 15px #fdffff;
+}
+.tech {
+  transition: 0.3s ease;
+}
+
+.tech:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #050505;
+}
+
+body.dark-mode .tech:hover {
+ 
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #ffffff;           
+}
+
+
+
+
+
+.certificados .tech {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.uai-link {
+  color: #72062a; /* Color institucional UAI (puedes cambiarlo) */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.uai-link:hover {
+  text-decoration: underline;
+  color: #72062a;
+  
+}
+.maxiprograma {
+  color: rgb(251, 251, 154);
+  text-shadow: 1px 1px 2px #303030;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.maxiprograma:hover {
+  text-decoration: underline;
+  color: rgb(251, 251, 154);
+  text-shadow: 1px 1px 2px #303030;
+}
+
+
+
+      @media (max-width: 1000px) {
+    .caja-central{
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+    }
+    .caja-cara{
+        width: 100%;
+        height: 50%;
+    }
+    .caja-presentacion{
+        width: 100%;
+        height: 50%;
+        align-items: flex-start;
+    }
+    .aptitudes{
+        width: auto;
+    }
+    .dos{
+        height: auto;
+        padding: 0 10px 10px 10px;
+
+    }
+    .tres{
+        height: auto;
+    }
+    .proyectos{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .card{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .red-social{
+        margin: 0 10px 0 10px;
+    }
+      .certificados {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+
+  .certificados .tech {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+  }
+  .tech-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tech {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.tech:hover {
+  transform: scale(1.05);
+}
+
+/* Modal estilos */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .tech {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .caja-central {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .caja-cara,
+  .caja-presentacion {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .dos {
+    padding: 0 15px;
+  }
+
+  .aptitudes {
+    width: 100%;
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  .certificados .tech {
+    max-width: 90%;
+  }
+
+  .tech {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  .contacto {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .red-social {
+    height: 50px;
+  }
+
+  .boton {
+    padding: 8px 16px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .tres {
+    padding: 20px;
+  }
+}
+
+}
